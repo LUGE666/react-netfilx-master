@@ -1,0 +1,153 @@
+[debug] [2021-09-24T02:08:19.164Z] ----------------------------------------------------------------------
+[debug] [2021-09-24T02:08:19.166Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-09-24T02:08:19.166Z] CLI Version:   9.17.0
+[debug] [2021-09-24T02:08:19.166Z] Platform:      win32
+[debug] [2021-09-24T02:08:19.166Z] Node Version:  v14.17.3
+[debug] [2021-09-24T02:08:19.167Z] Time:          Fri Sep 24 2021 10:08:19 GMT+0800 (GMT+08:00)
+[debug] [2021-09-24T02:08:19.167Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-24T02:08:19.169Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-09-24T02:08:19.186Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-24T02:08:19.187Z] > authorizing via signed-in user (lujianfeng33333@163.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\demo\react\react-netfilx-master
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-09-24T02:09:14.885Z] > refreshing access token with scopes: []
+[debug] [2021-09-24T02:09:14.885Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-24T02:09:35.927Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-09-24T02:09:36.133Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:141:12)
+    at refreshTokens (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:448:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.getAccessToken (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:145:23)
+    at async Client.addAuthHeader (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:136:21)
+    at async Client.request (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:94:34)
+    at async getProjectPage (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:233:17)
+    at async getFirebaseProjectPage (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:250:23)
+    at async selectProjectInteractively (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:95:41)
+    at async Object.doSetup [as project] (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:87:27)
+    at async init (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2021-09-24T02:11:56.097Z] ----------------------------------------------------------------------
+[debug] [2021-09-24T02:11:56.099Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-09-24T02:11:56.100Z] CLI Version:   9.18.0
+[debug] [2021-09-24T02:11:56.100Z] Platform:      win32
+[debug] [2021-09-24T02:11:56.100Z] Node Version:  v14.17.3
+[debug] [2021-09-24T02:11:56.101Z] Time:          Fri Sep 24 2021 10:11:56 GMT+0800 (GMT+08:00)
+[debug] [2021-09-24T02:11:56.101Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-24T02:11:56.103Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-09-24T02:11:56.124Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-24T02:11:56.124Z] > authorizing via signed-in user (lujianfeng33333@163.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\demo\react\react-netfilx-master
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-09-24T02:12:07.684Z] > refreshing access token with scopes: []
+[debug] [2021-09-24T02:12:07.684Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-24T02:12:28.724Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-09-24T02:12:28.939Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:141:12)
+    at refreshTokens (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:448:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.getAccessToken (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:144:23)
+    at async Client.addAuthHeader (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:135:21)
+    at async Client.request (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:34)
+    at async getProjectPage (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:233:17)
+    at async getFirebaseProjectPage (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:250:23)
+    at async selectProjectInteractively (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:95:41)
+    at async Object.doSetup [as project] (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:87:27)
+    at async init (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2021-09-24T03:12:37.450Z] ----------------------------------------------------------------------
+[debug] [2021-09-24T03:12:37.451Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-09-24T03:12:37.452Z] CLI Version:   9.18.0
+[debug] [2021-09-24T03:12:37.452Z] Platform:      win32
+[debug] [2021-09-24T03:12:37.452Z] Node Version:  v14.17.3
+[debug] [2021-09-24T03:12:37.452Z] Time:          Fri Sep 24 2021 11:12:37 GMT+0800 (GMT+08:00)
+[debug] [2021-09-24T03:12:37.453Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-24T03:12:37.454Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-09-24T03:12:37.476Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-24T03:12:37.476Z] > authorizing via signed-in user (lujianfeng33333@163.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\demo\react\react-netfilx-master
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-09-24T03:12:46.578Z] > refreshing access token with scopes: []
+[debug] [2021-09-24T03:12:46.578Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-24T03:13:07.623Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-09-24T03:13:08.960Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:141:12)
+    at refreshTokens (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:448:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.getAccessToken (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:144:23)
+    at async Client.addAuthHeader (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:135:21)
+    at async Client.request (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:34)
+    at async getProjectPage (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:233:17)
+    at async getFirebaseProjectPage (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:250:23)
+    at async selectProjectInteractively (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:95:41)
+    at async Object.doSetup [as project] (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:87:27)
+    at async init (C:\Users\EDY\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.

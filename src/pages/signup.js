@@ -5,6 +5,13 @@ import { Form } from '../components';
 import { HeaderContainer } from '../containers/header';
 import { FooterContainer } from '../containers/footer';
 import * as ROUTES from '../constants/routes';
+// import {
+//   getAuth,
+//   updateEmail,
+//   updatePassword,
+//   createUserWithEmailAndPassword,
+//   updateProfile,
+// } from 'firebase/auth';
 
 export default function SignUp() {
   const history = useHistory();
@@ -17,6 +24,7 @@ export default function SignUp() {
 
   const isInvalid = firstName === '' || password === '' || emailAddress === '';
 
+  // const auth = getAuth();
   const handleSignup = (event) => {
     event.preventDefault();
 
@@ -24,6 +32,8 @@ export default function SignUp() {
       .auth()
       .createUserWithEmailAndPassword(emailAddress, password)
       .then((result) =>
+        // console.log('result',result);
+
         result.user
           .updateProfile({
             displayName: firstName,
@@ -66,7 +76,11 @@ export default function SignUp() {
               placeholder="Password"
               onChange={({ target }) => setPassword(target.value)}
             />
-            <Form.Submit disabled={isInvalid} type="submit" data-testid="sign-up">
+            <Form.Submit
+              disabled={isInvalid}
+              type="submit"
+              data-testid="sign-up"
+            >
               Sign Up
             </Form.Submit>
           </Form.Base>
@@ -75,7 +89,8 @@ export default function SignUp() {
             Already a user? <Form.Link to="/signin">Sign in now.</Form.Link>
           </Form.Text>
           <Form.TextSmall>
-            This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot. Learn more.
           </Form.TextSmall>
         </Form>
       </HeaderContainer>
